@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, rgb(0, 90, 255), rgb(0, 225, 255));
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 300px 50px 300px;
+  padding: 20px 20px 15px 20px;
+  background-color: white;
+  border-radius: 3px;
+  width: 400px;
+}
+
+h2 {
+  font-family: Georgia, serif;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+/*
+**   Input tag for entering the list items
+**/
+.add-item {
+  padding: 5px 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  width: 310px;
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  outline: none;
+}
+
+/*
+**   Plus icon (font Awesome) for adding items to the array list
+**/
+.plus {
+  color: white;
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+/*
+**   Button tag for adding items to the list
+**/
+.add-button {
+  margin: 0px;
+  border: 1px solid rgb(110, 8, 179);
+  background-color: rgb(110, 8, 179);
+  padding: 5px 13px 5px 13px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  margin-top: 7px;
+}
+
+/*
+**   conatiner for Todo list
+**/
+.todo-list-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  background-color: rgb(128, 128, 128, 0.1);
+  font-family: Georgia, serif;
+  font-size: 1rem;
+  word-break: break-all;
+}
+
+.todo-list-container > div {
+  padding: 7px;
+}
+
+.todo-list-container > button {
+  padding: 4px 7px;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.delete-button {
+  vertical-align: middle;
+  opacity: 0;
+  color: rgb(128, 128, 128, 0.1);
+}
+
+.todo-list-container:hover button {
+  background-color: red;
+  opacity: 1;
+}
+
+.todo-list-container:hover .delete-button {
+  color: white;
+  opacity: 1;
+}
+
+.delete-button {
+  vertical-align: middle;
+  opacity: 0;
+  color: rgb(128, 128, 128, 0.1);
+}
+
+/*
+** Deleting all the Todo lists
+*/
+.clear-button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.clear-button > p {
+  font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+}
+
+.clear-button > button {
+  padding: 3px 10px 3px 10px;
+  background-color: rgb(110, 8, 179);
+  border: 1px solid rgb(110, 8, 179);
+  border-radius: 2px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  cursor: pointer;
+}
